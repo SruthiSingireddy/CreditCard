@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--jQuery Library -->
+		<script src="jquery-1.11.2.min.js"></script>
+		
+		<!--jQuery Mobile Library -->
+		<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+		<script src="jquery.js"></script>
+		<script src="jquery.mobile-1.4.5.js"></script>
+        <title>Credit Card Validation</title>
+		<style>
+			.ui-bar-f {
+				color: red;
+				background-color: yellow;
+			}
+			
+			.center {
+			text-align: center;
+			margin-left: auto;
+			margin-right:auto;
+		    }
+
+			.ui-body-f {
+				font-weight: bold;
+				color: white;
+				background-color: purple;
+			}
+
+			.ui-page-theme-f {
+				font-weight: bold;
+				background-image: url("images/light.png");
+
+			}
+	    </style>
+    </head>
+    <body>
+	<div data-role="page" data-theme="f" class="center">
+		 <header data-role="header" data-position="fixed" data-theme="a">
+		 <div style="width: 100%;">
+			 <h1>
+					<img src="images/header.jpg" style="width: 100%;" alt="Your Logo"" class="ui-btn-center" />
+			 </h1>
+		 </div>
+			
+		</header>
+		<div data-role="content" class="center">
+			<form>
+					<b>Credit Card Number:</b> <input id="ccnum" type="text" placeholder="60894567"/>
+					<button id="verify"  type="submit" class="ui-btn ui-btn-inline ui-mini ui-icon-alert ui-btn-icon-left ui-alt-icon"><b>Verify</b></button>
+					<div></div>
+			</form>
+		</div>	
+		<div data-role="footer" data-position="fixed" style="text-align:center;" data-theme="b">
+			<div data-role="controlgroup" data-type="vertical">
+				<a href="https://www.facebook.com/pages/jQuery/8936834181" class="ui-btn ui-icon-search ui-btn-icon-left">Facebook</a>
+				<a href="https://twitter.com/jquery" class="ui-btn ui-icon-search ui-btn-icon-left">Twitter</a>
+				<h1><b>Coded by: Sruthi Singireddy</b></h1>
+			</div>
+		</div>
+	</div>		
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
